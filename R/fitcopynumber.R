@@ -154,7 +154,8 @@ fit.copy.number = function(samplename, outputfile.prefix, inputfile.baf.segmente
     chr.segs[[ch]] = which(logR.data[,1]==chr.names[ch])
   }
 
-  print("Here")
+  write.table("what", "A.txt")
+	
   if(use_preset_rho_psi){
     ascat_optimum_pair = list(rho=preset_rho, psi = preset_psi, ploidy = preset_psi)
   }else{
